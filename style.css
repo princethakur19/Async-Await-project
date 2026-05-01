@@ -32,6 +32,11 @@ h1{
     padding: 10px;
     border: 2px solid white;
     border-radius: 5px;
+    transition: transform 1s ease-in;
+}
+
+.user:hover{
+    transform: scale(1.2);
 }
 
 img{
