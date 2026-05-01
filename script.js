@@ -1,4 +1,6 @@
 async function github(){
+
+    try {
     const response = await fetch("https://api.github.com/users");
     const data = await response.json();
     // console.log(data);
@@ -21,6 +23,10 @@ async function github(){
 
         element.append(image, userName, anchor);
         parent.append(element);
+    }
+    }
+    catch(error){
+        console.log("error");
     }
 }
 
