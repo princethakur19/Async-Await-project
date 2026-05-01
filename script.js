@@ -2,6 +2,11 @@ async function github(){
 
     try {
     const response = await fetch("https://api.github.com/users");
+    if(!response.ok){
+        throw new Error("Data is not available!")
+    }
+
+
     const data = await response.json();
     // console.log(data);
 
