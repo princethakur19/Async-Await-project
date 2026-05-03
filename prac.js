@@ -5,13 +5,13 @@ function getData(dataId, getNextData){
         if(getNextData){
             getNextData();
         }
-    }, 2000);
+    },2000)
 }
 
-getData(1, () =>{
-    getData(2, ()=>{
-        getData(3, ()=>{
-            getData(4, ()=>{
+getData(7,()=>{
+    getData(7,()=>{
+        getData(7,()=>{
+            getData(8,()=>{
             })
         })
     })
